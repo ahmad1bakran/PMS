@@ -169,6 +169,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedLang = (window.localStorage && localStorage.getItem(LANG_KEY)) || 'en';
   setLanguage(savedLang);
 
+  // Mobile fallback: ensure logo wall section shows on small screens even if observer misses
+  const clientGallery = document.querySelector('#client-gallery');
+  if (clientGallery && window.innerWidth <= 820) {
+    clientGallery.classList.add('visible');
+  }
+
   // Toggle back-to-top visibility on scroll
   window.addEventListener('scroll', () => {
     if (!backToTop) return;
