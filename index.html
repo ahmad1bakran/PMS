@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMS International - Company Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Language system: each text element holds English/Arabic strings in data-en/data-ar. JS picks the right one based on the currentLang state. -->
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <div class="logo-mark"><img src="/images/logo.png" alt="" /></div>
+        </div>
+        <div class="topbar-group">
+          <nav class="section-nav" aria-label="Section navigation">
+            <div class="section-nav-list">
+              <button
+                class="nav-link section-jump lang"
+                data-target="#hero"
+                data-en="Hero"
+                data-ar="الرئيسية"
+                type="button"
+              ></button>
+              <button
+                class="nav-link section-jump lang"
+                data-target="#about"
+                data-en="About"
+                data-ar="من نحن"
+                type="button"
+              ></button>
+              <button
+                class="nav-link section-jump lang"
+                data-target="#vmv"
+                data-en="Vision & Mission"
+                data-ar="الرؤية والرسالة"
+                type="button"
+              ></button>
+              <button
+                class="nav-link section-jump lang"
+                data-target="#services"
+                data-en="Services"
+                data-ar="الخدمات"
+                type="button"
+              ></button>
+              <button
+                class="nav-link section-jump lang"
+                data-target="#clients"
+                data-en="Clients"
+                data-ar="العملاء"
+                type="button"
+              ></button>
+              <button
+                class="nav-link section-jump lang"
+                data-target="#achievements"
+                data-en="Why Us"
+                data-ar="لماذا نحن"
+                type="button"
+              ></button>
+              <button
+                class="nav-link section-jump lang"
+                data-target="#partners"
+                data-en="Partners"
+                data-ar="الشركاء"
+                type="button"
+              ></button>
+            </div>
+          </nav>
+          <button
+            id="lang-toggle"
+            class="lang-toggle"
+            aria-label="Toggle language"
+          >
+            AR
+          </button>
+          <div class="contactUs">
+            <a
+              class="cta-link"
+              href="#contact"
+              data-en="Contact Us"
+              data-ar="تواصل معنا"
+            ></a>
+          </div>
+
+          <button class="menu-toggle" aria-label="Toggle menu" type="button">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero reveal" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p
+              class="eyebrow lang"
+              data-en="Healthcare Technology Partner"
+              data-ar="شريك التكنولوجيا الصحية"
+            ></p>
+            <h1
+              class="lang"
+              data-en="YOUR PARTNER TOWARDS LEADERSHIP IN THE MEDICAL SECTOR!"
+              data-ar="شريككم نحو الريادة في القطاع الطبي!"
+            ></h1>
+            <p
+              class="lang"
+              data-en="Integrated medical solutions, reliable partnerships, and patient-first innovation."
+              data-ar="حلول طبية متكاملة، شراكات موثوقة، وابتكار يضع المريض أولاً."
+            ></p>
+            <div class="hero-actions">
+              <a
+                class="btn primary lang"
+                data-en="Explore Services"
+                data-ar="استكشف الخدمات"
+                href="#services"
+              ></a>
+              <a
+                class="btn ghost lang scroll-contact"
+                data-en="Contact Us"
+                data-ar="تواصل معنا"
+                href="#contact"
+              ></a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="logo-placeholder">
+              <img src="/images/logo.png" alt="" />
+            </div>
+            <p
+              class="lang"
+              data-en="Precision Medical Solutions"
+              data-ar="حلول طبية دقيقة"
+            ></p>
+            <div class="stats">
+              <div>
+                <span class="stat-number">15+</span>
+                <span
+                  class="stat-label lang"
+                  data-en="Years Expertise"
+                  data-ar="سنوات خبرة"
+                ></span>
+              </div>
+              <div>
+                <span class="stat-number">12+</span>
+                <span
+                  class="stat-label lang"
+                  data-en="Global Partners"
+                  data-ar="شركاء عالميون"
+                ></span>
+              </div>
+              <div>
+                <span class="stat-number">24/7</span>
+                <span
+                  class="stat-label lang"
+                  data-en="Support"
+                  data-ar="دعم"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About us -->
+      <section class="section reveal" id="about">
+        <div class="container split">
+          <div class="image-block">
+            <img src="/images/4.jpg" alt="" />
+          </div>
+          <div class="content-block">
+            <p
+              class="section-kicker lang"
+              data-en="About Us"
+              data-ar="من نحن"
+            ></p>
+            <h2
+              class="section-title lang"
+              data-en="Specialists in integrated medical supply chains."
+              data-ar="متخصصون في تقديم حلول شاملة ومتكاملة في القطع الطبي"
+            ></h2>
+            <p
+              class="lang"
+              data-en="PMS International i s a leading company specializing i n providing
+comprehensive a n d integrated solutions in the medical sector.
+We empower hospitals and healthcare centers t o enhance their services and
+achieve the highest levels of quality and efficiency."
+              data-ar="بي ام اس العالمية هي شركة رائدة متخصصة في تقديم حلول شاملة ومتكاملة في القطاع الطبي تعمل على تمكين المستشفيات والمراكز الصحية من تحسين خدمتها وتحقيق أعلى مستويات الجودة والكفاءة."
+            ></p>
+            <p
+              class="lang"
+              data-en="Founded with the vision of delivering innovative services that keep pace with
+rapid advancements in healthcare, w e focus o n offering customized solutions
+tailored t o each client's needs."
+              data-ar="تأسست الشركة بهدف تقديم خدمات مبتكرة تواكب التطورات المتسارعة في مجال الرعاية الصحيو، مع التركيز على توفير حلول مخصصة تلبي احتياجات كل عميل."
+            ></p>
+          </div>
+        </div>
+      </section>
+      <!-- Our Vision -->
+      <section class="section muted reveal" id="vmv">
+        <div class="container">
+          <p
+            class="section-kicker lang"
+            data-en="Vision · Mission · Values"
+            data-ar="الرؤية · الرسالة · القيم"
+          ></p>
+          <h2
+            class="section-title lang"
+            data-en="A clear direction that keeps us accountable."
+            data-ar="اتجاه واضح يبقينا ملتزمين."
+          ></h2>
+          <div class="card-grid three">
+            <!-- Our Vision -->
+            <article class="card">
+              <div class="icon-dot">
+                <img src="/images/icons/vision.png" alt="" />
+              </div>
+              <h3 class="lang" data-en="Vision" data-ar="الرؤية"></h3>
+              <p
+                class="lang"
+                data-en="To be the first and most trusted partner for medical institutions in Kuwait and the GCC, offering innovative solutions that enhance the quality of healthcare services"
+                data-ar="أن نكون الشريك الأول والموثوق به للمؤسسات الطبية في الكويت ودول الخليج، من خلال تقديم حلول وخدمات مبتكرة تساهم في تحسين جودة الرعاية الصحية."
+              ></p>
+            </article>
+            <!-- Our Mission -->
+            <article class="card">
+              <div class="icon-dot">
+                <img src="/images/icons/message.png" alt="" />
+              </div>
+              <h3 class="lang" data-en="Mission" data-ar="الرسالة"></h3>
+              <p
+                class="lang"
+                data-en="To empower our clients to excel in their medical services by providing integrated solutions that encompass design, management, and technology, while adhering to the highest standards of quality and innovation."
+                data-ar="تمكين عملائنا من تحقيق التفوق في خدماتهم الطبية عبر توفير حلول متكاملة تشمل التصميم، الإذارة، والتكنولوجيا، مع الالتزام بأعلى معايير الجودة والابتكار."
+              ></p>
+            </article>
+            <!-- Our Values -->
+            <article class="card">
+              <div class="icon-dot">
+                <img src="/images/icons/task.png" alt="" />
+              </div>
+              <h3 class="lang" data-en="Values" data-ar="القيم"></h3>
+              <ul>
+                <li
+                  class="lang"
+                  data-en="Quality: Delivering world-class services."
+                  data-ar="الجودة: تقديم خدمات بمستويات عالمية."
+                ></li>
+                <li
+                  class="lang"
+                  data-en="Innovation: Adopting cuting-edge technologies and advanced solutions."
+                  data-ar="الابتكار: تبني أحدث التقنيات والحلول المتطورة."
+                ></li>
+                <li
+                  class="lang"
+                  data-en="Partnership: Building long-term re-lationships with our clients."
+                  data-ar="الشراكة: بناء علاقات طويلة الأمد مع عملائنا."
+                ></li>
+                <li
+                  class="lang"
+                  data-en="Transparency: Ensuring clarity and honesty throughout all stages of our work."
+                  data-ar="الشفافية: التعامل بوضوح ومصداقية في جميع مراحل العمل."
+                ></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Services -->
+      <section class="section reveal" id="services">
+        <div class="container">
+          <div class="services-heading">
+            <p
+              class="section-kicker lang"
+              data-en="Our Services"
+              data-ar="خدماتنا"
+            ></p>
+            <h2
+              class="section-title lang"
+              data-en="Eight pillars that keep your hospital moving."
+              data-ar="ثمانية ركائز تحافظ على حركة مستشفاك."
+            ></h2>
+          </div>
+          <div class="services-group">
+            <div class="card service-card">
+              <h3
+                class="lang"
+                data-en="Services 1 – 4"
+                data-ar="الخدمات 1 – 4"
+              ></h3>
+              <!-- 1 -->
+              <div class="service-item">
+                <div class="badge">
+                  <span class="badge-number">01</span>
+                  <span class="badge-icon"
+                    ><img src="/images/icons/hospital.png" alt=""
+                  /></span>
+                </div>
+                <div>
+                  <h4
+                    class="lang"
+                    data-en="Medical Facility Design and Management"
+                    data-ar="تصميم وإدارة المنشآت الطبية"
+                  ></h4>
+                  <ul>
+                    <li
+                      class="lang"
+                      data-en="Establishing hospitals and healthcare centers."
+                      data-ar="تأسيس المستشفيات والمراكز الطبية."
+                    ></li>
+                    <li
+                      class="lang"
+                      data-en="Equipping facilities with the latest technologies and equipment."
+                      data-ar="تجهيز المنشآت بأحدث المعدات والتقنيات."
+                    ></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="service-item">
+                <div class="badge">
+                  <span class="badge-number">02</span>
+                  <span class="badge-icon"
+                    ><img src="/images/icons/hospital2.png" alt=""
+                  /></span>
+                </div>
+                <div>
+                  <h4
+                    class="lang"
+                    data-en="Operating Room (One-Day Surgery) Solutions"
+                    data-ar="بناء غرف العمليات (اليوم الواحد)"
+                  ></h4>
+                  <ul>
+                    <li
+                      class="lang"
+                      data-en="Designing and implementing safe and efficient operating rooms for outpatient procedures."
+                      data-ar="تصميم وتنفيذ غرف عمليات آمنة وفعالة للعمليات التي لا تتطلب إقامة."
+                    ></li>
+                    <!-- <li
+                      class="lang"
+                      data-en="Multidisciplinary project management with clear milestones."
+                      data-ar="إدارة مشاريع متعددة التخصصات مع مراحل واضحة."
+                    ></li> -->
+                  </ul>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="service-item">
+                <div class="badge">
+                  <span class="badge-number">03</span>
+                  <span class="badge-icon"
+                    ><img src="/images/icons/hospital3.png" alt=""
+                  /></span>
+                </div>
+                <div>
+                  <h4
+                    class="lang"
+                    data-en="Operational and Administrative Development"
+                    data-ar="التشغيل والتطوير الإداري"
+                  ></h4>
+                  <ul>
+                    <li
+                      class="lang"
+                      data-en="Enhancing the operational and administrative efficiency of healthcare institutions."
+                      data-ar="تحسين الكفاءة التشغيلية والإدارية للمؤسسات الصحية."
+                    ></li>
+                    <!-- <li
+                      class="lang"
+                      data-en="Original spare parts and certified technicians."
+                      data-ar="قطع غيار أصلية وفنيون معتمدون."
+                    ></li> -->
+                  </ul>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="service-item">
+                <div class="badge">
+                  <span class="badge-number">04</span>
+                  <span class="badge-icon"
+                    ><img src="/images/icons/hospital4.png" alt=""
+                  /></span>
+                </div>
+                <div>
+                  <h4
+                    class="lang"
+                    data-en="Medical Licensing and Compliance"
+                    data-ar="إصدار ومتابعة التراخيص الطبية"
+                  ></h4>
+                  <ul>
+                    <li
+                      class="lang"
+                      data-en="Ensuring full adherence to applicable laws and regulations."
+                      data-ar="ضمان الامتثال الكامل للقوانين واللوائح المعمول بها."
+                    ></li>
+                    <!-- <li
+                      class="lang"
+                      data-en="Documentation, SOPs, and certification paths."
+                      data-ar="التوثيق وإجراءات التشغيل ومسارات الاعتماد."
+                    ></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card service-card">
+              <h3
+                class="lang"
+                data-en="Services 5 – 8"
+                data-ar="الخدمات 5 – 8"
+              ></h3>
+              <!-- 5 -->
+              <div class="service-item">
+                <div class="badge">
+                  <span class="badge-number">05</span>
+                  <span class="badge-icon"
+                    ><img src="/images/icons/hospital5.png" alt=""
+                  /></span>
+                </div>
+                <div>
+                  <h4
+                    class="lang"
+                    data-en="Medical Consulting"
+                    data-ar="الاستشارات الطبية"
+                  ></h4>
+                  <ul>
+                    <li
+                      class="lang"
+                      data-en="Providong specialized expertise to support client service development."
+                      data-ar="تقديم خبرات متخصصة لدعم تطوير خدمات العملاء."
+                    ></li>
+                    <!-- <li
+                      class="lang"
+                      data-en="Customs clearance and regulatory handling."
+                      data-ar="التخليص الجمركي والتعامل التنظيمي."
+                    ></li> -->
+                  </ul>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="service-item">
+                <div class="badge">
+                  <span class="badge-number">06</span>
+                  <span class="badge-icon"
+                    ><img src="/images/icons/hospital6.png" alt=""
+                  /></span>
+                </div>
+                <div>
+                  <h4
+                    class="lang"
+                    data-en="Medical Equipment Supply"
+                    data-ar="توفير الأجهزة الطبية"
+                  ></h4>
+                  <ul>
+                    <li
+                      class="lang"
+                      data-en="Supplying the latest high-quality medical equipment."
+                      data-ar="توريد أحدث المعدات الطبية ذات الجودة العالية."
+                    ></li>
+                    <!-- <li
+                      class="lang"
+                      data-en="Workflow design to reduce downtime and waste."
+                      data-ar="تصميم سير العمل لتقليل التوقف والهدر."
+                    ></li> -->
+                  </ul>
+                </div>
+              </div>
+              <!-- 7 -->
+              <div class="service-item">
+                <div class="badge">
+                  <span class="badge-number">07</span>
+                  <span class="badge-icon"
+                    ><img src="/images/icons/hospital8.png" alt=""
+                  /></span>
+                </div>
+                <div>
+                  <h4
+                    class="lang"
+                    data-en="Marketing Solutions"
+                    data-ar="الحلول التسويقية"
+                  ></h4>
+                  <ul>
+                    <li
+                      class="lang"
+                      data-en="Boosting awareness of medical services and elevating healthcare centers' market presence."
+                      data-ar="تعزيز الوعي بالخدمات الطبية ورفع مكانة المراكز الصحية في تسويق."
+                    ></li>
+                    <!-- <li
+                      class="lang"
+                      data-en="Data dashboards for utilization and uptime."
+                      data-ar="لوحات بيانات للاستخدام وزمن التشغيل."
+                    ></li> -->
+                  </ul>
+                </div>
+              </div>
+              <!-- 8 -->
+              <div class="service-item">
+                <div class="badge">
+                  <span class="badge-number">08</span>
+                  <span class="badge-icon"
+                    ><img src="/images/icons/hospital7.png" alt=""
+                  /></span>
+                </div>
+                <div>
+                  <h4
+                    class="lang"
+                    data-en="Technological Solutions"
+                    data-ar="الحلول التكنولوجية"
+                  ></h4>
+                  <ul>
+                    <li
+                      class="lang"
+                      data-en="Designing advanced IT systems to streamline medical and administrative operations."
+                      data-ar="تصميم أنظمة تقنية متطورة تسهل العمل الطبي والإداري"
+                    ></li>
+                    <!-- <li
+                      class="lang"
+                      data-en="Energy-efficient solutions and smart monitoring."
+                      data-ar="حلول كفاءة الطاقة والمراقبة الذكية."
+                    ></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Clients -->
+      <section class="section reveal" id="clients">
+        <div class="clients-wrap">
+          <div class="clients-left"></div>
+          <div class="clients-right">
+            <div class="clients-header">
+              <div class="clients-icon">★</div>
+              <div>
+                <p
+                  class="section-kicker lang"
+                  data-en="Our Clients"
+                  data-ar="عملاؤنا"
+                ></p>
+                <h2
+                  class="section-title lang"
+                  data-en="We are proud to serve a diverse range of clients, including"
+                  data-ar="نتشرف بخدمة مجموعة متنوعة من العملاء تشمل"
+                ></h2>
+              </div>
+            </div>
+            <div class="clients-grid">
+              <article class="client-tile">
+                <div class="tile-icon">
+                  <img src="/images/icons/hospital10.png" alt="" />
+                </div>
+                <div class="tile-text">
+                  <h3
+                    class="lang"
+                    data-en="Primary healthcare centers"
+                    data-ar="مراكز الرعاية الصحية الأولية"
+                  ></h3>
+                  <p
+                    class="lang"
+                    data-en="Community and outpatient facilities"
+                    data-ar="المنشآت المجتمعية والعيادات الخارجية"
+                  ></p>
+                </div>
+              </article>
+              <article class="client-tile">
+                <div class="tile-icon">
+                  <img src="/images/icons/hospital8.png" alt="" />
+                </div>
+                <div class="tile-text">
+                  <h3
+                    class="lang"
+                    data-en="Public and private hospitals"
+                    data-ar="المستشفيات الحكومية والخاصة"
+                  ></h3>
+                  <p
+                    class="lang"
+                    data-en="General, specialty, and tertiary care"
+                    data-ar="مستشفيات عامة وتخصصية وثالثية"
+                  ></p>
+                </div>
+              </article>
+              <article class="client-tile">
+                <div class="tile-icon">
+                  <img src="/images/icons/hospital6.png" alt="" />
+                </div>
+                <div class="tile-text">
+                  <h3
+                    class="lang"
+                    data-en="Specialized clinics & labs"
+                    data-ar="العيادات المتخصصة والمختبرات"
+                  ></h3>
+                  <p
+                    class="lang"
+                    data-en="Diagnostic centers and private practices"
+                    data-ar="مراكز تشخيص وممارسات خاصة"
+                  ></p>
+                </div>
+              </article>
+              <article class="client-tile">
+                <div class="tile-icon">
+                  <img src="/images/icons/hospital3.png" alt="" />
+                </div>
+                <div class="tile-text">
+                  <h3
+                    class="lang"
+                    data-en="Medical equipment suppliers"
+                    data-ar="الشركات الموردة للمعدات الطبية"
+                  ></h3>
+                  <p
+                    class="lang"
+                    data-en="OEMs, distributors, and service providers"
+                    data-ar="مصنعون وموزعون ومقدمو خدمات"
+                  ></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Clients Logos -->
+      <section class="section muted reveal client-showcase" id="client-gallery">
+        <div class="container">
+          <div class="showcase-top">
+            <div>
+              <p
+                class="section-kicker lang"
+                data-en="Our Clients"
+                data-ar="عملاؤنا"
+              ></p>
+              <h2
+                class="section-title lang"
+                data-en="A curated wall of trust."
+                data-ar="جدار ثقة مصمم بعناية."
+              ></h2>
+              <p
+                class="lang"
+                data-en="Hospitals, ministries, and medical centers we proudly serve. Replace each tile with the final marks to spotlight your network."
+                data-ar="مستشفيات ووزارات ومراكز طبية نخدمها بفخر. استبدل كل بطاقة بالشعار النهائي لإبراز شبكتك."
+              ></p>
+              <div class="logo-chips">
+                <span
+                  class="logo-chip lang"
+                  data-en="Hospitals"
+                  data-ar="مستشفيات"
+                ></span>
+                <span
+                  class="logo-chip lang"
+                  data-en="Ministries"
+                  data-ar="وزارات"
+                ></span>
+                <span
+                  class="logo-chip lang"
+                  data-en="Medical Centers"
+                  data-ar="مراكز طبية"
+                ></span>
+              </div>
+            </div>
+            <div class="showcase-card">
+              <div class="showcase-metric">
+                <span class="metric-number">18</span>
+                <span
+                  class="metric-label lang"
+                  data-en="featured marks"
+                  data-ar="شعار مميز"
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="logo-grid">
+            <figure class="logo-card" style="--accent: #f4c542">
+              <div class="logo-frame" data-initial="WH">
+                <img
+                  src="/images/clients/1.png"
+                  alt="Wara Hospital logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">WH</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #9bd5ff">
+              <div class="logo-frame" data-initial="AS">
+                <img
+                  src="/images/clients/2.png"
+                  alt="Al Salam Hospital logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">AS</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #ffc48c">
+              <div class="logo-frame" data-initial="MOH">
+                <img
+                  src="/images/clients/3.png"
+                  alt="Ministry of Health logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">MOH</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #f87e6a">
+              <div class="logo-frame" data-initial="KH">
+                <img
+                  src="/images/clients/4.png"
+                  alt="Kuwait Hospital logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">KH</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #b3ffda">
+              <div class="logo-frame" data-initial="IH">
+                <img
+                  src="/images/clients/5.png"
+                  alt="International Hospital logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">IH</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #e3c6ff">
+              <div class="logo-frame" data-initial="BMC">
+                <img
+                  src="/images/clients/6.png"
+                  alt="Bouvardia Medical Center logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">BMC</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #8be3ff">
+              <div class="logo-frame" data-initial="AFM">
+                <img
+                  src="/images/clients/7.png"
+                  alt="Armed Forces Medical logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">AFM</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #f4c542">
+              <div class="logo-frame" data-initial="DSC">
+                <img
+                  src="/images/clients/8.png"
+                  alt="Day Surgery Center logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">DSC</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #9bd5ff">
+              <div class="logo-frame" data-initial="SCN">
+                <img
+                  src="/images/clients/9.png"
+                  alt="Specialty Clinics Network logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">SCN</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #ffc48c">
+              <div class="logo-frame" data-initial="RC">
+                <img
+                  src="/images/clients/10.png"
+                  alt="Rehabilitation Center logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">RC</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #f87e6a">
+              <div class="logo-frame" data-initial="PC">
+                <img
+                  src="/images/clients/11.png"
+                  alt="Pediatrics Center logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">PC</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #b3ffda">
+              <div class="logo-frame" data-initial="WHC">
+                <img
+                  src="/images/clients/12.png"
+                  alt="Women's Health logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">WHC</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #e3c6ff">
+              <div class="logo-frame" data-initial="CI">
+                <img
+                  src="/images/clients/13.png"
+                  alt="Cardiac Institute logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">CI</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #8be3ff">
+              <div class="logo-frame" data-initial="DC">
+                <img
+                  src="/images/clients/14.png"
+                  alt="Dental Care logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">DC</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #f4c542">
+              <div class="logo-frame" data-initial="DL">
+                <img
+                  src="/images/clients/15.png"
+                  alt="Future Diagnostics logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">FD</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #9bd5ff">
+              <div class="logo-frame" data-initial="PM">
+                <img
+                  src="/images/clients/16.png"
+                  alt="Prime Medical logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">PM</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #ffc48c">
+              <div class="logo-frame" data-initial="NC">
+                <img
+                  src="/images/clients/17.png"
+                  alt="Nova Clinics logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">NC</span>
+              </div>
+            </figure>
+            <figure class="logo-card" style="--accent: #f87e6a">
+              <div class="logo-frame" data-initial="HL">
+                <img
+                  src="/images/clients/18.png"
+                  alt="Helio Labs logo"
+                  loading="lazy"
+                  onerror="this.remove(); this.parentElement.classList.add('missing');"
+                />
+                <span class="logo-fallback">HL</span>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- Why Choose Us -->
+      <section class="section reveal" id="achievements">
+        <div class="container split">
+          <div class="content-block">
+            <p
+              class="section-kicker lang"
+              data-en="Why Choose Us?"
+              data-ar="لماذا نحن؟"
+            ></p>
+            <h2
+              class="section-title lang"
+              data-en="Proven delivery with measurable outcomes."
+              data-ar="تسليم مثبت بنتائج قابلة للقياس."
+            ></h2>
+            <ul class="checklist">
+              <li
+                class="lang"
+                data-en="Extensive Expertise: A team of professionals with vast experience in medical design and management."
+                data-ar="خبرة واسعة: فريق من الخبراء في المجالات التصميم الطبي والإدارة."
+              ></li>
+              <li
+                class="lang"
+                data-en="Comprehensive Solutions: Providing integrated services that meet al healthcare facility needs."
+                data-ar="حلول شاملة: تقديم خدمات متكاملة تلبي جميع احتياجات المنشآت الطبية."
+              ></li>
+              <li
+                class="lang"
+                data-en="On-Time Delivery: Completing projects within precise timelines."
+                data-ar="التزام بالمواعيد: تنفيذ المشروعات وفق جداول زمنية دقيقة."
+              ></li>
+              <li
+                class="lang"
+                data-en="Continuous Support: Offering after-sales services to ensure client satisfaction."
+                data-ar="دعم مستمر: تقديم خدمات مابعد البيع لضمان رضا العملاء."
+              ></li>
+            </ul>
+          </div>
+          <div class="card achievements-card">
+            <h3
+              class="lang"
+              data-en="Our Achievements"
+              data-ar="إنجازاتنا"
+            ></h3>
+            <ul class="highlight-list">
+              <li>
+                <span class="pill">1</span
+                ><span
+                  class="lang"
+                  data-en="Designing and managing several leading medical centers in Kuwait."
+                  data-ar="تصميم وإدارة عدد من المراكز الطبية الرائدة في الكويت."
+                ></span>
+              </li>
+              <li>
+                <span class="pill">2</span
+                ><span
+                  class="lang"
+                  data-en="Equipping medical centers with the latest global technologies."
+                  data-ar="تجهيز مراكز طبية بأحدث التقنيات العالمية."
+                ></span>
+              </li>
+              <li>
+                <span class="pill">3</span
+                ><span
+                  class="lang"
+                  data-en="Developing innovative solutions that improved the performance of healthcare institutions."
+                  data-ar="تطوير حلول مبتكرة ساعدت على تحسين أداء المؤسسات الصحية."
+                ></span>
+              </li>
+              <li>
+                <span class="pill">4</span
+                ><span
+                  class="lang"
+                  data-en="Customer satisfaction score 4.9/5"
+                  data-ar="تقييم رضا العملاء 4.9/5"
+                ></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Our Partners -->
+      <section class="section muted reveal" id="partners">
+        <div class="container">
+          <p
+            class="section-kicker lang"
+            data-en="Our Partners"
+            data-ar="شركاؤنا"
+          ></p>
+          <h2
+            class="section-title lang"
+            data-en="Strategic alliances that expand our reach."
+            data-ar="تحالفات استراتيجية توسع نطاقنا."
+          ></h2>
+          <div class="card-grid six">
+            <div class="partner-card">
+              <img src="/images/Partners/1.png" alt="" />
+            </div>
+            <div class="partner-card">
+              <img src="/images/Partners/2.png" alt="" />
+            </div>
+            <div class="partner-card">
+              <img src="/images/Partners/3.png" alt="" />
+            </div>
+            <div class="partner-card">
+              <img src="/images/Partners/4.png" alt="" />
+            </div>
+            <div class="partner-card">
+              <img src="/images/Partners/5.png" alt="" />
+            </div>
+            <div class="partner-card">
+              <img src="/images/Partners/6.png" alt="" />
+            </div>
+          </div>
+          <div class="card-grid six">
+            <div class="partner-card">
+              <img src="/images/Partners/7.png" alt="" />
+            </div>
+            <div class="partner-card">
+              <img src="/images/Partners/8.png" alt="" />
+            </div>
+            <div class="partner-card">
+              <img src="/images/Partners/9.png" alt="" />
+            </div>
+            <div class="partner-card">
+              <img src="/images/Partners/10.png" alt="" />
+            </div>
+            <div class="partner-card">
+              <img src="/images/Partners/11.png" alt="" />
+            </div>
+            <div class="partner-card">
+              <img src="/images/Partners/12.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- contact -->
+    <footer class="section footer reveal" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <h3
+            class="lang"
+            data-en="PMS International"
+            data-ar="بي إم إس إنترناشونال"
+          ></h3>
+          <p
+            class="lang"
+            data-en="Your partner in healthcare excellence."
+            data-ar="شريككم في التميز في الرعاية الصحية."
+          ></p>
+        </div>
+        <div>
+          <h4 class="lang" data-en="Contact" data-ar="تواصل معنا"></h4>
+          <p
+            class="lang"
+            data-en="Kuwait City, Healthcare District"
+            data-ar="مدينة الكويت، حي الرعاية الصحية"
+          ></p>
+          <p
+            class="lang ltr-text"
+            data-en="State of Kuwait - Sharq city - Block 2 - Jaber Al-Mubarak Street"
+            data-ar="State of Kuwait - Sharq city - Block 2 - Jaber Al-Mubarak Street"
+          ></p>
+          <p
+            class="lang ltr-text"
+            data-en="Al-Sharqiya Tower - Floor 1B - Office 20"
+            data-ar="Al-Sharqiya Tower - Floor 1B - Office 20"
+          ></p>
+          <p>
+            <span class="lang" data-en="Phone" data-ar="هاتف"></span>:
+            <span class="ltr-text">+965 5057 9559</span>
+          </p>
+          <p>
+            <span class="lang" data-en="Phone" data-ar="هاتف"></span>:
+            <span class="ltr-text">+965 5032 2996</span>
+          </p>
+          <p>
+            <span
+              class="lang"
+              data-en="Email"
+              data-ar="البريد الإلكتروني"
+            ></span
+            >:
+            <span class="ltr-text">info@pmskw.com</span>
+          </p>
+          <p class="ltr-text">
+            <span
+              class="footer-accent lang"
+              data-en="Company License No:"
+              data-ar="Company License No:"
+            ></span>
+            833/2023
+            <span
+              class="footer-accent lang"
+              data-en="Paci No:"
+              data-ar="Paci No:"
+            ></span>
+            21835525
+          </p>
+        </div>
+        <div>
+          <h4 class="lang" data-en="Follow" data-ar="تابعنا"></h4>
+          <div class="social">
+            <a
+              class="social-icon social-ig"
+              href="https://www.instagram.com/pms.intl.kw"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm5 3.5A3.5 3.5 0 1 1 8.5 12 3.5 3.5 0 0 1 12 8.5zm0 2A1.5 1.5 0 1 0 13.5 12 1.5 1.5 0 0 0 12 10.5zm4.25-4a.75.75 0 1 1-.75.75.75.75 0 0 1 .75-.75z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p
+          class="lang"
+          data-en="© 2025 PMS International. All rights reserved."
+          data-ar="© 2025 بي إم إس إنترناشونال. جميع الحقوق محفوظة."
+        ></p>
+      </div>
+    </footer>
+
+    <button
+      id="back-to-top"
+      class="back-to-top"
+      aria-label="Back to top"
+      type="button"
+    >
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
