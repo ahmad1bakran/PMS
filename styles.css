@@ -66,7 +66,7 @@ img {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.25rem;
   padding: 0.8rem 0;
 }
 
@@ -78,13 +78,14 @@ img {
 }
 
 .logo-mark {
-  width: 95px;
+  width: 85px;
   height: 55px;
   border-radius: 12px;
   background: linear-gradient(135deg, #243247, #0b111d);
   border: 1px solid rgba(255, 255, 255, 0.06);
   display: grid;
   place-items: center;
+  padding: 5px;
 }
 
 .topbar-group {
@@ -92,6 +93,7 @@ img {
   flex-direction: row-reverse;
   gap: 15px;
   order: 5;
+  margin-left: 20px;
 }
 
 .brand-text small {
@@ -386,6 +388,7 @@ body.rtl .brand {
   background: linear-gradient(145deg, #1a2537, #0f1624);
   display: grid;
   place-items: center;
+  padding: 5px;
   font-weight: 800;
   letter-spacing: 0.08em;
   color: var(--accent-yellow);
@@ -569,8 +572,7 @@ body.rtl .brand {
       rgba(244, 197, 66, 0.18),
       rgba(12, 19, 31, 0.7)
     ),
-    url("https://images.unsplash.com/photo-1582719478248-54e9f2af98b8?auto=format&fit=crop&w=1200&q=80")
-      center/cover no-repeat;
+    center/cover no-repeat;
   box-shadow: var(--card-shadow);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -699,7 +701,7 @@ body.rtl .card ul {
   padding: 1.4rem 1.5rem 1.6rem;
   margin-bottom: 1.6rem;
   border-radius: var(--radius-lg);
-  background: url("/images/3.webp") center/cover no-repeat;
+  background: url("./images/3.webp") center/cover no-repeat;
 }
 
 .services-heading::before {
@@ -897,7 +899,7 @@ body.rtl .checklist li::before {
       rgba(15, 22, 36, 0.88),
       rgba(12, 18, 30, 0.78)
     ),
-    url("/images/1.png") center/cover no-repeat;
+    url("./images/1.png") center/cover no-repeat;
 }
 
 #partners::before {
@@ -944,7 +946,7 @@ body.rtl .checklist li::before {
       rgba(12, 18, 30, 0.65),
       rgba(12, 18, 30, 0.85)
     ),
-    url("/images/5.jpg") center/cover no-repeat;
+    url("./images/5.jpg") center/cover no-repeat;
 }
 
 .clients-right {
@@ -1232,8 +1234,8 @@ body.rtl .checklist li::before {
 }
 
 .logo-frame img {
-  width: 82%;
-  height: 82%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;
   filter: grayscale(1) contrast(1.05) brightness(1.05);
   z-index: 1;
@@ -1410,10 +1412,12 @@ body.rtl .checklist li::before {
   font-weight: 700;
   text-decoration: none;
 }
+
 .social-icon svg {
   width: 18px;
   height: 18px;
 }
+
 .social-ig {
   background: linear-gradient(135deg, #f58529, #dd2a7b 45%, #8134af, #515bd4);
   color: #fff;
@@ -1463,7 +1467,7 @@ body.rtl .checklist li::before {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1120px) {
   .topbar {
     position: sticky;
     gap: 0.6rem;
@@ -1539,7 +1543,7 @@ body.rtl .checklist li::before {
     grid-template-columns: 60px 1fr;
   }
   .logo-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   }
 }
 
