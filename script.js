@@ -156,6 +156,9 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+          if (entry.target.id === 'hero') {
+            animateCounters(); // kick off stats when hero is visible
+          }
           observer.unobserve(entry.target);
         }
       });
@@ -174,6 +177,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (clientGallery && window.innerWidth <= 820) {
     clientGallery.classList.add('visible');
   }
+  // If hero already visible on load, start counters
+  if (document.querySelector('#hero.visible')) {
+    animateCounters();
+  }
 
   // Toggle back-to-top visibility on scroll
   window.addEventListener('scroll', () => {
@@ -185,3 +192,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// Animated counters for hero stats
+function animateCounters() {
+  const duration = 1400; // ms
+  const counters = document.querySelectorAll('.stat-number[data-target]');
+  counters.forEach((el) => {
+    if (el.dataset.animated === 'true') return;
+    const target = parseFloat(el.dataset.target || '0');
+    const suffix = el.dataset.suffix || '';
+    const start = 0;
+    const startTime = performance.now();
+    const formatter = Number.isInteger(target)
+      ? (v) => Math.round(v)
+      : (v) => Number(v).toFixed(1);
+
+    const step = (now) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const current = start + (target - start) * progress;
+      el.textContent = `${formatter(current)}${suffix}`;
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.dataset.animated = 'true';
+      }
+    };
+    requestAnimationFrame(step);
+  });
+}
